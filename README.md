@@ -6,5 +6,6 @@ this is airac automatic updater
 # Sourse code running
 to install
 ```pip install beautifulsoup4 pyqt5 requests```
+
 to run
 ```python main.py```
