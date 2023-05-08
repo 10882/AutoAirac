@@ -1,6 +1,6 @@
 # AutoAirac
 this is airac automatic updater
-#Check [RELEASES](https://github.com/10882/AutoAirac/releases)
+# Check [RELEASES](https://github.com/10882/AutoAirac/releases)
 
 
 # Sourse code running
