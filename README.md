@@ -1,6 +1,7 @@
 # AutoAirac
 this is airac automatic updater
 # Check [RELEASES](https://github.com/10882/AutoAirac/releases)
+To run open main.exe
 
 
 # Sourse code running
