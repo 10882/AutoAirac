@@ -16,6 +16,7 @@ import sys
 
 import checker
 import download
+import Addishon
 
 class Ui_MainWindow(QMainWindow):
     def __init__(self) -> None:
@@ -31,12 +32,14 @@ class Ui_MainWindow(QMainWindow):
         font.setPointSize(20)
         self.Zagolovok.setFont(font)
         self.Zagolovok.setObjectName("Zagolovok")
+
         self.special4 = QtWidgets.QLabel(self.centralwidget)
         self.special4.setGeometry(QtCore.QRect(270, 430, 211, 21))
         font = QtGui.QFont()
         font.setPointSize(10)
         self.special4.setFont(font)
         self.special4.setObjectName("special4")
+
         self.selectButton = QtWidgets.QPushButton(self.centralwidget)
         self.selectButton.setGeometry(QtCore.QRect(50, 120, 191, 61))
         font = QtGui.QFont()
@@ -44,6 +47,7 @@ class Ui_MainWindow(QMainWindow):
         self.selectButton.setFont(font)
         self.selectButton.clicked.connect(self.selectFolder)
         self.selectButton.setObjectName("selectButton")
+
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(80, 290, 491, 61))
         font = QtGui.QFont()
@@ -113,10 +117,13 @@ class Ui_MainWindow(QMainWindow):
             download.unzip(actualHref[2])
             self.progressBar.setProperty("value", 95) 
 
+            Addishon.addNDB()
+
             download.remove(actualHref[0])
             download.remove(actualHref[1])
             download.remove(actualHref[2])
-            self.progressBar.setProperty("value", 100)             
+            self.progressBar.setProperty("value", 100)      
+            self.label.setText('Ваша версия Airac актуальна')
         else:
             return
         
