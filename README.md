@@ -10,3 +10,6 @@ to install
 
 to run
 ```python main.py```
+
+
+# Spesial for УТЦ Ватрус
